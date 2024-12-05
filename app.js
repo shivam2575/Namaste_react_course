@@ -1,16 +1,5 @@
-{
-  /* <div id="parent">
-  <div id="child1">
-    <h1 id="head1"></h1>
-    <p id="para1"></p>
-  </div>
-  <div id="child2">
-    <h1 id="head2"></h1>
-    <p id="para2"></p>
-  </div>
-</div>; */
-}
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 const nestedEle = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
     React.createElement("h1", { id: "head1" }, "This is heading of child 1"),
