@@ -1,14 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-const heading = React.createElement("div", { id: "heading" }, "Namaste React");
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// JSX components
-const jsxHeading = (
-  <h1 id="jsxHeading" tabIndex="5">
-    Namaste React using JSX
+// React components
+const JsxHeading = () => (
+  <h1 id="heading" tabIndex="5">
+    Namaste React using React heading component
   </h1>
 );
+
+const JsxParagraph = () => (
+  <p id="paragraph" tabIndex="5">
+    paragraph component
+  </p>
+);
+
+const JsxContainer = () => (
+  <div>
+    <JsxHeading />
+    <JsxParagraph />
+  </div>
+);
+
 // rendering react objects using react
-root.render(heading);
+root.render(<JsxContainer />);
